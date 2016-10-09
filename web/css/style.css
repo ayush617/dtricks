@@ -92,5 +92,14 @@ color:#555555;
 .bottom
 {   height:200px;
     background-color:#263238;
+    padding-top: 10px;
     
 }
+
+.bottom h1
+{
+    color: black;
+    text-align: center;
+}
+
+
