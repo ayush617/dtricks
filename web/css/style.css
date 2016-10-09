@@ -1,0 +1,17 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	font:"New Times Roman";
+}
+
+header{
+	background-color: #222;
+	border:none;
+	height:52px;
+}
+
+.navbar{
+	border:none;
+}
