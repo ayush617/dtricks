@@ -1,0 +1,112 @@
+*{
+	box-sizing: border-box;
+}
+body, html {
+    height: 95%;
+}
+body{
+	font-family:"New Times Roman";
+}
+
+header{
+	background-color: #222;
+	border:none;
+	height:52px;
+	position: fixed;
+	width: 100%;
+}
+p{
+	color: black;
+}
+.navbar{
+	border:none;
+}
+
+
+.button1 {
+    border: none;
+    color: white;
+    padding: 5px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: #555555;
+}
+
+.button1:hover { 
+background-color: white;
+color:#555555; 
+}
+
+.parallax {
+    /* The image used */
+    background-image: url('../images/1.jpg');
+    /* Full height */
+    height: 100%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax2 {
+    /* The image used */
+    background-image: url('../images/2.jpg');
+    /* Full height */
+    height: 100%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax3 {
+    /* The image used */
+    background-image: url('../images/3.jpg');
+
+    /* Full height */
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box 
+{   height:150px;
+    background-color:rgba(0,0,0,0.45);
+    font-size:36px;
+    line-height: 1em; 
+    text-align: center;
+    color: #555555;
+    padding-top: 20px;
+    font-family: 
+
+}
+.bottom{
+    height:200px;
+    background-color:#263238;
+    
+}
+    
+.slide{
+    top:100px;
+    margin: 0 10px;
+}
+.spic img{
+    margin: 40px auto; 
+    width: 100%;
+    padding: 0 10px;
+}
+
+.slick-prev:before, .slick-next:before{
+    color:black;
+}
+
+}
