@@ -141,3 +141,21 @@ color:#555555;
    text-decoration: bold; 
    font-size: 30px;
 }
+
+.slide{
+    top:100px;
+    margin: 0 10px;
+    font-size: 30px;
+    color: grey;
+}
+.spic img{
+    margin: 40px auto; 
+    width: 100%;
+    padding: 0 10px;
+
+}
+
+.slick-prev:before, .slick-next:before{
+    color:black;
+}
+
