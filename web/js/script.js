@@ -90,9 +90,9 @@ dc.showMovie=function(id){
           responseText2 =insertProperty(responseText2,"des",movlist[mov].des);
           responseText2 =insertProperty(responseText2,"name",movlist[mov].title);
           responseText2 =insertProperty(responseText2,"IMDB",movlist[mov].IMDB);
-
           responseText2 =insertProperty(responseText2,"BookMyShow",movlist[mov].BookMyShow);
           responseText2 =insertProperty(responseText2,"dur",movlist[mov].duration);
+          responseText2 =insertProperty(responseText2,"link",movlist[mov].link);
         }
     }
       insertHtml("#main-content",responseText2);
