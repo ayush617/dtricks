@@ -69,7 +69,7 @@ dc.showMovie=function(id){
     var obj = jQuery.parseJSON(responseText);
     movlist=obj.Movies;
     var loc="";
-    loc="demo/web/movie.html?id="+id;
+    loc="/demo/web/movie.html?id="+id;
 
     $ajaxUtils.sendGetRequest(
     "movie-snippet.html",
