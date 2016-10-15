@@ -1,7 +1,7 @@
 
 
 {
-"no":5,
+"no":6,
 "Movies": {
 		"Dhoni":{
 		"id":0,
@@ -48,6 +48,7 @@
 "genre":"jhb",
 "duration":"jhjb ",
 "link":"www.google.com"}
+
 ,"asklcfnanc,ja":{
 "id":4,
 "title": "lknslcnlsnc ",
@@ -58,4 +59,16 @@
 "genre":"msc ,ms c,ms",
 "duration":"smsc ,ms c,ms",
 "link":"https://www.google.co.in/"}
+,
+"ayush":{
+"id":5,
+"title": "ayush",
+"des": "ayush",
+"rdate": "hgvjhvjhv",
+"IMDB": "8.4/10",
+"BookMyShow":"6.4/10",
+"genre":"jbkjbk",
+"duration":"kjbkjbkjbkbk",
+"link":"https://www.google.co.in/"}
+
 }}

@@ -31,7 +31,9 @@ $str=str_replace("$oldMessage", "$deletedFormat",$str);
 
 //write the entire string
 file_put_contents('json/movie.json', $str);
+fclose($file);
 }
+
 
 
 $a="";
@@ -73,6 +75,53 @@ $str=str_replace("$oldMessage", "$deletedFormat",$str);
 //write the entire string
 file_put_contents('json/movie.json', $str);
 
+//image ->
+{$f_name="";
+$f_size="";
+$f_type="";
+$f_status="";
+
+
+     
+
+   
+      $errors= array();
+      $file_name = $_FILES['image']['name'];
+      $file_size = $_FILES['image']['size'];
+      $file_tmp = $_FILES['image']['tmp_name'];
+      $file_type = $_FILES['image']['type'];
+      //$file_ext=strtolower(end(explode('.',$_FILES['image']['name'])));
+     
+      $file_ext=(strtolower(end((explode('.',$file_name)))));
+      
+      $expensions= array("jpeg","jpg","png");
+      
+      if(in_array($file_ext,$expensions)=== false){
+         $errors[]="extension not allowed, please choose a JPEG or PNG file.";
+      }
+      
+      if($file_size > 2097152) {
+         $errors[]='File size must be excately 2 MB';
+      }
+      
+      if(empty($errors)==true) {
+         move_uploaded_file($file_tmp,"images/movie/b/".$bb.'.jpg');
+         $f_name="Sent file: ".$_FILES['image']['name'];
+         $f_size="File size: ".$_FILES['image']['size'];
+         $f_type="File type: ".$_FILES['image']['type'];
+         $f_status="File Successfully Uploaded";
+      }
+      else{
+         print_r($errors);
+      }
+
+   echo $f_status;
+   
+
+
+
+}
+// <- image
 
 }
 
@@ -85,7 +134,7 @@ file_put_contents('json/movie.json', $str);
 	<title></title>
 </head>
 <body>
-<form method="post"  action="input.php" >
+<form method="post"  action="input.php"  enctype = "multipart/form-data">
 <table>
 <tr>
 <td>Name:</td>
@@ -135,6 +184,11 @@ file_put_contents('json/movie.json', $str);
 <tr>
 <td>Link:</td>
 <td><input type="text" name="link"></td>
+</tr>
+
+<tr>
+<td>Image:</td>
+<td> <input type = "file" name = "image" /></td>
 </tr>
 
 
