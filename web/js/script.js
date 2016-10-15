@@ -166,7 +166,7 @@ var id=dc.urlParam('id');
   }
   else{
     var id=dc.urlParam('id');
-    history.pushState("null","null","demo/web/movie.html");
+    history.pushState("null","null","/demo/web/movie.html");
     $dc.showMovie(parseInt(id));
   }
 })
