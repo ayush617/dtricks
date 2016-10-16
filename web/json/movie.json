@@ -1,74 +1,17 @@
 
 
 {
-"no":6,
+"no":1,
 "Movies": {
-		"Dhoni":{
-		"id":0,
-		"title": "M.S. Dhoni:The Untold Story",
-		"des": "Coaches, mentors and friends inspire young M.S. Dhoni (Sushant Singh Rajput) to become a master cricketer and captain of Team India.Release date: September 30, 2016 (India)Director: Neeraj PandeyMusic director: Amaal Mallik, Rochak Kohli, Sanjoy Chowdhury",
-		"rdate": "",
-		"IMDB": "8.4/10",
-		"BookMyShow":"8.4/10",
-		"genre":"Drama film/Bollywood",
-		"duration":"3h 10m",
-		"link":""
-  		},
-		"Sucide-Squad":{
-		"id":1,
-		"title": "movie 2",
-		"des": "Coaches, mentors and friends inspire young M.S. Dhoni (Sushant Singh Rajput) to become a master cricketer and captain of Team India.Release date: September 30, 2016 (India)Director: Neeraj PandeyMusic director: Amaal Mallik, Rochak Kohli, Sanjoy Chowdhury",
-		"rdate": "",
-		"IMDB": "8.4/10",
-		"BookMyShow":"8.4/10",
-		"genre":"Drama film/Bollywood",
-		"duration":"3h 10m",
-		"link":""
-  		},
-
-		"Ayush":{
-		"id":2,
-		"title": "Ayush",
-		"des": "Coaches, mentors and friends inspire young M.S. Dhoni (Sushant Singh Rajput) to become a master cricketer and captain of Team India.Release date: September 30, 2016 (India)Director: Neeraj PandeyMusic director: Amaal Mallik, Rochak Kohli, Sanjoy Chowdhury",
-		"rdate": "",
-		"IMDB": "8.4/10",
-		"BookMyShow":"8.4/10",
-		"genre":"Drama film/Bollywood",
-		"duration":"3h 10m",
-		"link":""
-  		}
-
-,"ayush":{
-"id":3,
-"title": "iujhbib",
-"des": "ikbhjkhbj",
-"rdate": "hjbjhv jb",
-"IMDB": "jhvj j",
-"BookMyShow":"jb n",
-"genre":"jhb",
-"duration":"jhjb ",
-"link":"www.google.com"}
-
-,"asklcfnanc,ja":{
-"id":4,
-"title": "lknslcnlsnc ",
-"des": "ns ,mc s,m c",
-"rdate": "lsnc ,smc ,ms",
-"IMDB": "sn c,ms c,ms ",
-"BookMyShow":"smsc ,ms cs,m",
-"genre":"msc ,ms c,ms",
-"duration":"smsc ,ms c,ms",
-"link":"https://www.google.co.in/"}
-,
-"ayush":{
-"id":5,
-"title": "ayush",
-"des": "ayush",
-"rdate": "hgvjhvjhv",
+"Dhoni":{
+"id":0,
+"title": "M.S. Dhoni:The Untold Story",
+"des": "Coaches, mentors and friends inspire young M.S. Dhoni (Sushant Singh Rajput) to become a master cricketer and captain of Team India.Release date: September 30, 2016 (India)Director: Neeraj PandeyMusic director: Amaal Mallik, Rochak Kohli, Sanjoy Chowdhury",
+"rdate": "",
 "IMDB": "8.4/10",
-"BookMyShow":"6.4/10",
-"genre":"jbkjbk",
-"duration":"kjbkjbkjbkbk",
-"link":"https://www.google.co.in/"}
+"BookMyShow":"8.4/10",
+"genre":"Drama film/Bollywood",
+"duration":"3h 10m",
+"link":""}
 
 }}
