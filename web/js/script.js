@@ -63,8 +63,9 @@ var insertProperty = function (string, propName, propValue) {
 
 dc.showMovie=function(id){
   var a=id;
+  if(id<1000){
   $ajaxUtils.sendGetRequest(
-  "json/movie.json",
+  "json/movieb.json",
   function (responseText) {
     var obj = jQuery.parseJSON(responseText);
     movlist=obj.Movies;
@@ -77,8 +78,6 @@ dc.showMovie=function(id){
       var mov;    
       for(mov in movlist){
         if(movlist[mov].id==id){
-
-
           responseText2 =insertProperty(responseText2,"id",movlist[mov].id);
           responseText2 =insertProperty(responseText2,"genre",movlist[mov].genre);
           responseText2 =insertProperty(responseText2,"date",movlist[mov].rdate);
@@ -98,6 +97,42 @@ dc.showMovie=function(id){
   },
   false);
 }
+else{
+    $ajaxUtils.sendGetRequest(
+  "json/movieh.json",
+  function (responseText) {
+    var obj = jQuery.parseJSON(responseText);
+    movlist=obj.Movies;
+    var loc="";
+    loc="/demo/web/movie.html?id="+id;
+
+    $ajaxUtils.sendGetRequest(
+    "movie-snippet.html",
+    function (responseText2,a){
+      var mov;    
+      for(mov in movlist){
+        if(movlist[mov].id==id){
+          responseText2 =insertProperty(responseText2,"id",movlist[mov].id);
+          responseText2 =insertProperty(responseText2,"genre",movlist[mov].genre);
+          responseText2 =insertProperty(responseText2,"date",movlist[mov].rdate);
+          responseText2 =insertProperty(responseText2,"Title",movlist[mov].title);
+          responseText2 =insertProperty(responseText2,"des",movlist[mov].des);
+          responseText2 =insertProperty(responseText2,"name",movlist[mov].title);
+          responseText2 =insertProperty(responseText2,"IMDB",movlist[mov].IMDB);
+          responseText2 =insertProperty(responseText2,"BookMyShow",movlist[mov].BookMyShow);
+          responseText2 =insertProperty(responseText2,"dur",movlist[mov].duration);
+          responseText2 =insertProperty(responseText2,"link",movlist[mov].link);
+          
+          history.pushState(null,null,loc);
+        }
+    }
+      insertHtml("#main-content",responseText2);
+    },false);
+  },
+  false);
+}
+}
+
 
 
 dc.urlParam = function(id){
