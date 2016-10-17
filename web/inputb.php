@@ -18,7 +18,7 @@ if($pass=="zxcvbnm")
 
    //counter++
 {
-   $file=fopen("json/movieh.json","r");
+   $file=fopen("json/movieb.json","r");
 $line=fgets($file);
      while (!feof($file))
 {
@@ -42,13 +42,13 @@ $cc=$bb+1;
 
 $deletedFormat ='"no":'.$cc;
 //read the entire string
-$str=file_get_contents('json/movieh.json');
+$str=file_get_contents('json/movieb.json');
 
 //replace something in the file string - this is a VERY simple example
 $str=str_replace("$oldMessage", "$deletedFormat",$str);
 
 //write the entire string
-file_put_contents('json/movieh.json', $str);
+file_put_contents('json/movieb.json', $str);
 fclose($file);
 }
 
@@ -58,7 +58,6 @@ fclose($file);
 
 $a=$_POST['name'];
 $b=$bb;
-$b=$b+1000;
 $c=$_POST['title'];
 $d=$_POST['dec'];
 $e=$_POST['rdate'];
@@ -74,13 +73,13 @@ $oldMessage = '}}';
 
 $deletedFormat =',"'.$a.'":{'.PHP_EOL.'"id":'.$b.",".PHP_EOL.'"title": "'.$c.'",'.PHP_EOL.'"des": "'.$d.'",'.PHP_EOL.'"rdate": "'.$e.'",'.PHP_EOL.'"IMDB": "'.$f.'",'.PHP_EOL.'"BookMyShow":"'.$g.'",'.PHP_EOL.'"genre":"'.$h.'",'.PHP_EOL.'"duration":"'.$i.'",'.PHP_EOL.'"link":"'.$j.'"}'.PHP_EOL.'}}';
 //read the entire string
-$str=file_get_contents('json/movieh.json');
+$str=file_get_contents('json/movieb.json');
 
 //replace something in the file string - this is a VERY simple example
 $str=str_replace("$oldMessage", "$deletedFormat",$str);
 
 //write the entire string
-file_put_contents('json/movieh.json', $str);
+file_put_contents('json/movieb.json', $str);
 
 
 
@@ -146,10 +145,10 @@ else
 <!DOCTYPE html>
 <html>
 <head>
-   <title></title>
+	<title></title>
 </head>
 <body>
-<form method="post"  action="inputh.php"  enctype = "multipart/form-data">
+<form method="post"  action="inputb.php"  enctype = "multipart/form-data">
 <table>
 <tr>
 <td>Name:</td>
