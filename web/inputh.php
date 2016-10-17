@@ -1,6 +1,6 @@
 <?php
 {
-	$file=fopen("json/movieb.json","r");
+	$file=fopen("json/movieh.json","r");
 $line=fgets($file);
 	  while (!feof($file))
 {
@@ -24,13 +24,13 @@ $cc=$bb+1;
 
 $deletedFormat ='"no":'.$cc;
 //read the entire string
-$str=file_get_contents('json/movieb.json');
+$str=file_get_contents('json/movieh.json');
 
 //replace something in the file string - this is a VERY simple example
 $str=str_replace("$oldMessage", "$deletedFormat",$str);
 
 //write the entire string
-file_put_contents('json/movieb.json', $str);
+file_put_contents('json/movieh.json', $str);
 fclose($file);
 }
 
@@ -52,6 +52,7 @@ if(isset($_POST['submit'])){
 
 $a=$_POST['name'];
 $b=$bb;
+$b=$b+1000;
 $c=$_POST['title'];
 $d=$_POST['dec'];
 $e=$_POST['rdate'];
@@ -67,13 +68,13 @@ $oldMessage = '}}';
 
 $deletedFormat =',"'.$a.'":{'.PHP_EOL.'"id":'.$b.",".PHP_EOL.'"title": "'.$c.'",'.PHP_EOL.'"des": "'.$d.'",'.PHP_EOL.'"rdate": "'.$e.'",'.PHP_EOL.'"IMDB": "'.$f.'",'.PHP_EOL.'"BookMyShow":"'.$g.'",'.PHP_EOL.'"genre":"'.$h.'",'.PHP_EOL.'"duration":"'.$i.'",'.PHP_EOL.'"link":"'.$j.'"}'.PHP_EOL.'}}';
 //read the entire string
-$str=file_get_contents('json/movieb.json');
+$str=file_get_contents('json/movieh.json');
 
 //replace something in the file string - this is a VERY simple example
 $str=str_replace("$oldMessage", "$deletedFormat",$str);
 
 //write the entire string
-file_put_contents('json/movieb.json', $str);
+file_put_contents('json/movieh.json', $str);
 
 //image ->
 {$f_name="";
@@ -105,7 +106,7 @@ $f_status="";
       }
       
       if(empty($errors)==true) {
-         move_uploaded_file($file_tmp,"images/movie/b/".$bb.'.jpg');
+         move_uploaded_file($file_tmp,"images/movie/b/".$b.'.jpg');
          $f_name="Sent file: ".$_FILES['image']['name'];
          $f_size="File size: ".$_FILES['image']['size'];
          $f_type="File type: ".$_FILES['image']['type'];
@@ -134,7 +135,7 @@ $f_status="";
 	<title></title>
 </head>
 <body>
-<form method="post"  action="input.php"  enctype = "multipart/form-data">
+<form method="post"  action="inputh.php"  enctype = "multipart/form-data">
 <table>
 <tr>
 <td>Name:</td>
