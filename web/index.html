@@ -1,13 +1,13 @@
+
 <!doctype html>
 <html>
 <head>
+	{% load static %}
+	<link rel="stylesheet" type="text/css" href="{% static 'home/css/bootstrap.min.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'home/css/style.css' %}">
 
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	
-	<script src="js/jquery-2.1.4.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-    <script src="js/bootstrap-hover-dropdown.min.js"></script>
+	<script src="{% static 'home/js/jquery-2.1.4.min.js' %}"></script>
+	<script src="{% static 'home/js/bootstrap.min.js'%}"></script>
 </head>
 <header>
 	  <div class="container">
@@ -30,7 +30,7 @@
 	              <a href="#" class="dropdown-toggle js-activated" data-hover="dropdown" data-toggle="dropdown">Dropdown<b class="caret"></b></a>
 	              <ul class="dropdown-menu">
 	                <li><a href="#">Technology</a></li>
-	                <li><a href="movie.html">Movies</a></li>
+	                <li><a href="movies/">Movies</a></li>
 	                <li><a href="#">Games</a></li>
 	              </ul>
 	            </li>
@@ -43,40 +43,54 @@
 	  </div>
 </header>
 <body>
+
 <div class="parallax"></div>
+
 <div class="box">
-	<p>
+	<h1>
 	Technology
+	</h1>
+	<p>
+		Find solution to all your Tech-Problems here.
 	</p>
-	<button class="button1" >FIND OUT MORE</button>
+	<button class="button1" ><p>FIND OUT MORE</p></button>
 </div>
 
 <div class="parallax2"></div>
 <div class="box">
+	<h1>
+		Movies
+	</h1>
 	<p>
-	Movies
+		All the movies are just one click away..
 	</p>
-	<a href="movie.html">
-	<button class="button1"><b>FIND OUT MORE</b></button>
+	<a href="movies/">
+	<button class="button1"><p>FIND OUT MORE</p></button>
 	</a>
 </div>
 
 <div class="parallax3"></div>
 <div class="box">
+	<h1>
+		Games
+	</h1>
 	<p>
-	Games
+		The fun of gaming begins here.
 	</p>
-	<a href="game.html">
-	<button class="button1"><b>FIND OUT MORE</b></button>
-	</a>
+	<button class="button1"><p>FIND OUT MORE</b></button>
 </div>
-<div  class="bottom" text="#E0E0E0" link="#E0E0E0">
-    
-
-    <h1>About us..</h1>
-
-
-    
+<div class="about">
+		<h1>About us..</h1>
+	</div>
 </div>
+
+<footer>
+	<div class="container">
+    <p>
+    <span class="glyphicon glyphicon-copyright-mark" aria-hidden="true"></span>
+    All Rights Reserved Dtricks
+    </p>
+  </div>
+<footer>
 </body>
 </html>
