@@ -35,7 +35,7 @@ p{
 
 footer{
 	background-color: black;
-	box-shadow: inset 3px 3px 5px 6px #242424;
+	box-shadow: inset inset -1px 3px 5px 5px #121212;
 }
 
 footer p{
