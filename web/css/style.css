@@ -21,6 +21,11 @@ p{
 	color: black;
 }
 
+.container{
+	padding:30px 0;
+}
+
+
 /******header start *******/
 
 .navbar{
