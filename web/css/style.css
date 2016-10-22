@@ -19,7 +19,6 @@ header{
 
 p{
 	color: black;
-	margin: 0;
 }
 
 /******header start *******/
@@ -31,151 +30,46 @@ p{
 
 /******header end *******/
 
-/*****Footer*****/
-
-footer{
-	background-color: black;
-	box-shadow: inset inset -1px 3px 5px 5px #121212;
-}
-
-footer p{
-	padding: 30px;
-	color: white;
-	font-size: 16px;
-}
-
-/***footer end *****/
-
-/******body  start *******/
-
-.about{
-    padding-top: 30px;
-		background-color: #e6e3e3;
-		margin: 0;
-}
-
-.about h1{
-    color: black;
-    text-align: center;
-		padding-bottom: 20px;
-		margin: 0;
-}
-
-/**movie start**/
-
-.movie img{
-    height: 450px;
-    display: block;
-     margin: 0 auto;
-     margin-top: 60px;
-}
-
-.movie h1{  margin-top: 50px;
-   text-align: center;
-}
-
-.movie h5{  color: grey;
-   text-align: center;
-}
-
-.movie h4{
-	margin-top: 50px;
-  color: grey;
-  text-align: center;
-}
-
-.movie p{  margin-top: 50px;
-    color: grey;
-   	margin-left: auto;
-    margin-right: auto;
-    width: 60%;
-    font-size: 20px;
-}
 
 
 
-        /**movie end**/
 
-
-/******** index page ********/
-
-.box {
-    padding: 20px 0;
-    background-color:rgba(0,0,0,0.54);
-    line-height: 1em;
-    text-align: center;
-		box-shadow: inset -5px -5px 30px 5px #242424;
-}
-
-.box p{
-	color:rgba(242, 248, 239, 0.61);
-	font-size: 20px;
-	padding: 20px;
-}
-
-.box h1{
-	font-size: 42px;
-}
-
+/******body start *******/
 .button1 {
     border: none;
+    color: white;
     padding: 5px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    margin: 10px 2px 30px;
+    font-size: 16px;
+    margin: 4px 2px;
     cursor: pointer;
     background-color: #555555;
 }
 
-.button1 p{
-	font-size: 16px;
-	font-weight: bold;
-	padding: 10px 0 10px;
-	color:#ffffff;
+.button1:hover { 
+background-color: white;
+color:#555555; 
 }
 
-.button1:hover {
-background-color: white;
-}
-.button1:hover p{
-color: black;
-}
-.download{    margin-top: 50px;
-    color: grey;
+
+
+
+.download
+{    margin-top: 50px;
+    color: grey;   
    text-align: center;
-   text-decoration: bold;
+   text-decoration: bold; 
    font-size: 30px;
 }
 
 
-			/******index end ********/
 
+        /**parralax start**/
 
-        /**slideshow start**/
-
-.slide{
-    top:100px;
-    margin: 0 10px;
-    font-size: 30px;
-    color: grey;
-}
-
-.spic img{
-    margin: 40px auto;
-    width: 100%;
-    padding: 0 10px;
-
-}
-
-.slick-prev:before, .slick-next:before{
-    color:black;
-}
-
-        /**slideshow end**/
 
 .parallax {
-	/**parralax start**/
     /* The image used */
     background-image: url('../images/1.jpg');
     /* Full height */
@@ -212,3 +106,90 @@ color: black;
     background-size: cover;
 }
         /**parralax end**/
+
+.box {
+    padding: 20px 0;
+    background-color:rgba(0,0,0,0.45);
+    font-size:36px;
+    line-height: 1em; 
+    text-align: center;
+    color: #555555;
+   
+
+}
+.bottom
+{   height:200px;
+    background-color:#263238;
+    padding-top: 10px;
+    
+}
+
+.bottom h1
+{
+    color: black;
+    text-align: center;
+}
+
+/**movie start**/
+.movie img
+{
+    height: 450px;
+    display: block; 
+     margin: 0 auto;
+     margin-top: 60px; 
+}
+
+.movie h1
+{  margin-top: 50px;
+   text-align: center;
+}
+
+.movie h5
+{  color: grey;   
+   text-align: center;
+}
+.movie h4
+{  margin-top: 50px;
+    color: grey;   
+   text-align: center;
+}
+
+.movie p
+{  margin-top: 50px;
+    color: grey;   
+   margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    font-size: 20px;
+}
+
+#main-content{
+    position: relative;
+    top:40px;
+}
+
+
+        /**movie end**/
+
+
+        /**slideshow start**/
+
+.slide{
+    top:100px;
+    margin: 0 10px;
+    font-size: 30px;
+    color: grey;
+}
+.spic img{
+    margin: 40px auto; 
+    width: 100%;
+    padding: 0 10px;
+
+}
+
+.slick-prev:before, .slick-next:before{
+    color:black;
+}
+
+        /**slideshow end**/
+
