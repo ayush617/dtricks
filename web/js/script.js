@@ -1,33 +1,3 @@
-$(document).ready(function(){
-  $(".slide").slick({
-      variableWidth: false,
-      slidesToShow: 3,
-      responsive: [
-        {
-          breakpoint: 768,
-          settings: {
-            arrows: true,
-            slidesToShow: 2
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            arrows: true,
-            slidesToShow: 1
-          }
-        }
-      ]
-
-  });
-
-});
-
-
-
-
-
-
 (function(global){
 
 
@@ -151,26 +121,27 @@ $ajaxUtils.sendGetRequest(
       .innerHTML = responseText;
 
       $(".slide").slick({
-          centerMode: true,
-          centerPadding: '60px',
           variableWidth: false,
           slidesToShow: 4,
           responsive: [
             {
-              breakpoint: 768,
+              breakpoint: 1140,
               settings: {
                 arrows: true,
-                centerMode: true,
-                centerPadding: '40px',
                 slidesToShow: 3
+              }
+            },
+            {
+              breakpoint: 790,
+              settings: {
+                arrows: true,
+                slidesToShow: 2
               }
             },
             {
               breakpoint: 480,
               settings: {
                 arrows: true,
-                centerMode: true,
-                centerPadding: '40px',
                 slidesToShow: 1
               }
             }

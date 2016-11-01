@@ -82,14 +82,14 @@ footer p{
 /******** index page ********/
 
 .box {
-    padding: 20px 0;
+    padding: 20px 0 50px;
     background-color:rgba(0,0,0,0.54);
     line-height: 1em;
     text-align: center;
-    background: -webkit-linear-gradient(#373636, #706e6e); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#373636, #706e6e); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#373636, #706e6e); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#373636, #706e6e);
+    background: -webkit-linear-gradient(#373636, #848484); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#373636, #848484); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#373636, #848484); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#373636, #848484);
 }
 
 .box h1{
@@ -200,6 +200,9 @@ color: black;
 	background-color: white;
 	width: 95%;
 	margin:0 auto 20px;
+    -webkit-border-radius: 15px; 
+    -moz-border-radius: 15px; 
+    border-radius: 15px; 
 }
 
 .slide-head h1{
@@ -225,4 +228,21 @@ color: black;
 				        /**slideshow end**/
 .movie-body{
     padding-bottom: 50px;
+    background: red;
+    background: -webkit-linear-gradient(red, yellow);
+    background: -o-linear-gradient(red, yellow);
+    background: -moz-linear-gradient(red, yellow);
+    background: linear-gradient(#7d7d7d, #cdcdcd);
+}
+
+
+@media only screen and (max-width: 780px) {
+    .slideshow {
+        margin:0 20px;
+
+    }
+    .container{
+        width: 90%;
+        margin: 0 auto;
+    }
 }
