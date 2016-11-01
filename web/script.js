@@ -1,33 +1,32 @@
-    $(document).ready(function(){
-      $(".slide").slick({
-          centerMode: true,
-          centerPadding: '60px',
-          variableWidth: false,
-          slidesToShow: 4,
-          responsive: [
-            {
-              breakpoint: 768,
-              settings: {
-                arrows: true,
-                centerMode: true,
-                centerPadding: '40px',
-                slidesToShow: 3
-              }
-            },
-            {
-              breakpoint: 480,
-              settings: {
-                arrows: true,
-                centerMode: true,
-                centerPadding: '40px',
-                slidesToShow: 1
-              }
-            }
-          ]
+$(document).ready(function(){
+  $(".slide").slick({
+      variableWidth: false,
+      slidesToShow: 3,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            arrows: true,
+            slidesToShow: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            arrows: true,
+            slidesToShow: 1
+          }
+        }
+      ]
 
-      });
+  });
 
-    });
+});
+
+
+
+
+
 
 (function(global){
 
@@ -55,19 +54,19 @@ var insertProperty = function (string, propName, propValue) {
   return string;
 }
 
-dc.showGame=function(id){
+dc.showMovie=function(id){
   var a=id;
-  {
+  if(id<1000){
   $ajaxUtils.sendGetRequest(
-  "json/game.json",
+  "json/movieb.json",
   function (responseText) {
     var obj = jQuery.parseJSON(responseText);
     movlist=obj.Movies;
     var loc="";
-    loc="/demo/web/game.html?id="+id;
+    loc="/demo/web/movie.html?id="+id;
 
     $ajaxUtils.sendGetRequest(
-    "game-snippet.html",
+    "movie-snippet.html",
     function (responseText2,a){
       var mov;    
       for(mov in movlist){
@@ -91,7 +90,40 @@ dc.showGame=function(id){
   },
   false);
 }
+else{
+    $ajaxUtils.sendGetRequest(
+  "json/movieh.json",
+  function (responseText) {
+    var obj = jQuery.parseJSON(responseText);
+    movlist=obj.Movies;
+    var loc="";
+    loc="/demo/web/movie.html?id="+id;
 
+    $ajaxUtils.sendGetRequest(
+    "movie-snippet.html",
+    function (responseText2,a){
+      var mov;    
+      for(mov in movlist){
+        if(movlist[mov].id==id){
+          responseText2 =insertProperty(responseText2,"id",movlist[mov].id);
+          responseText2 =insertProperty(responseText2,"genre",movlist[mov].genre);
+          responseText2 =insertProperty(responseText2,"date",movlist[mov].rdate);
+          responseText2 =insertProperty(responseText2,"Title",movlist[mov].title);
+          responseText2 =insertProperty(responseText2,"des",movlist[mov].des);
+          responseText2 =insertProperty(responseText2,"name",movlist[mov].title);
+          responseText2 =insertProperty(responseText2,"IMDB",movlist[mov].IMDB);
+          responseText2 =insertProperty(responseText2,"BookMyShow",movlist[mov].BookMyShow);
+          responseText2 =insertProperty(responseText2,"dur",movlist[mov].duration);
+          responseText2 =insertProperty(responseText2,"link",movlist[mov].link);
+          
+          history.pushState(null,null,loc);
+        }
+    }
+      insertHtml("#main-content",responseText2);
+    },false);
+  },
+  false);
+}
 }
 
 
@@ -108,12 +140,12 @@ dc.urlParam = function(id){
 
 
 
-function game(event) {
+function movie(event) {
   var id=dc.urlParam('id');
   if(id==null){
 
 $ajaxUtils.sendGetRequest(
-  "slideshow1.html",
+  "slideshow.html",
   function (responseText) {
     document.querySelector("#main-content")
       .innerHTML = responseText;
@@ -148,22 +180,22 @@ $ajaxUtils.sendGetRequest(
   },
   false);}
 else{
-  dc.showGame(id);
+  dc.showMovie(id);
 }
 }
 
-document.addEventListener("DOMContentLoaded", game(event));
+document.addEventListener("DOMContentLoaded", movie(event));
 
 $(window).on('popstate',function(){
 var href=location.pathname;
 var id=dc.urlParam('id');
   if(!id){
-    game(event);   
+    movie(event);   
   }
   else{
     var id=dc.urlParam('id');
-    history.pushState("null","null","/demo/web/game.html");
-    $dc.showGame(parseInt(id));
+    history.pushState("null","null","/demo/web/movie.html");
+    $dc.showMovie(parseInt(id));
   }
 })
 global.$dc = dc;
