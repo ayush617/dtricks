@@ -86,19 +86,19 @@ footer p{
     background-color:rgba(0,0,0,0.54);
     line-height: 1em;
     text-align: center;
-		box-shadow: inset -5px -5px 30px 5px #242424;
+
+
 }
 
 .box p{
-	color:rgba(242, 248, 239, 0.61);
+/*	color:rgba(242, 248, 239, 0.61);*/
+color: white;
 	font-size: 20px;
 	padding: 20px;
 }
 
-.box h1{
-	font-size: 42px;
-}
 
+/*
 .button1 {
     border: none;
     padding: 5px 32px;
@@ -132,8 +132,28 @@ color: black;
 
 
 			/******index end ********/
+			.button1 {
+			    background-color: #4CAF50; /* Green */
+			    border: none;
+			    color: white;
+			    padding: 16px 32px;
+			    text-align: center;
+			    text-decoration: none;
+			    display: inline-block;
+			    font-size: 16px;
+			    margin: 4px 2px;
+			    -webkit-transition-duration: 0.4s; /* Safari */
+			    transition-duration: 0.4s;
+			    cursor: pointer;
+					background-color: white;
+    color: #666666;
+    border: 2px solid #e7e7e7;
+}
 
-
+.button1:hover {background-color: #666666;
+                color:white;
+							border:none;
+						}
 
 .parallax {
 	/**parralax start**/
@@ -177,7 +197,7 @@ color: black;
 
 
 				        /**slideshow start**/
-								
+
 .slideshow{
 	position: relative;
 	top: 52px;
