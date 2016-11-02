@@ -117,10 +117,10 @@ color: white;
 
 			/******index end ********/
 button {
-background-color: #4CAF50; 
+background-color: #eaeaea; 
 border: none;
 color: white;
-padding: 16px 32px;
+padding: 16px 30px;
 text-align: center;
 text-decoration: none;
 display: inline-block;
@@ -129,9 +129,8 @@ margin: 4px 2px;
 -webkit-transition-duration: 0.4s; /* Safari */
 transition-duration: 0.4s;
 cursor: pointer;
-background-color: white;
 color: #666666;
-border: 2px solid #e7e7e7;
+border-radius:5px;
 }
 
 button:hover 
@@ -148,7 +147,7 @@ margin: 4px 2px;
 -webkit-transition-duration: 0.4s; /* Safari */
 transition-duration: 0.4s;
 cursor: pointer;
-border: 2px solid transparent;
+border-radius: 5px;
 }
 
 .parallax {
