@@ -132,7 +132,9 @@ margin: 4px 2px;
 transition-duration: 0.4s;
 cursor: pointer;
 color: #666666;
-border-radius:5px;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
 }
 
 .button1:hover
