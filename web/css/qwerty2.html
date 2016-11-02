@@ -1,0 +1,23 @@
+<html>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <script>
+    function scroll(val)
+    {
+        
+                $('html, body').animate({
+                    scrollTop: $(val).offset().top
+                }, 1000);
+         
+
+    }
+    </script>
+    <button id="click" onclick="scroll('#div1')" >Click me</button>
+    <div id="div1" style="height: 1000px; width 100px">
+        Test
+    </div>
+    <br/>
+    <div id="div2" style="height: 1000px; width 100px">
+        Test 2
+    </div>
+    
+</html>

@@ -99,7 +99,7 @@ footer p{
 color: white;
 	font-size: 20px;
 	padding: 20px;
-    
+
 }
 
 .box h1{
@@ -117,7 +117,7 @@ color: white;
 
 			/******index end ********/
 button {
-background-color: #eaeaea; 
+background-color: #eaeaea;
 border: none;
 color: white;
 padding: 16px 30px;
@@ -133,7 +133,7 @@ color: #666666;
 border-radius:5px;
 }
 
-button:hover 
+button:hover
 {
 background-color: #666666;
 color:white;
@@ -212,9 +212,9 @@ border-radius: 5px;
 	background-color: white;
 	width: 95%;
 	margin:0 auto 20px;
-    -webkit-border-radius: 15px; 
-    -moz-border-radius: 15px; 
-    border-radius: 15px; 
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
 }
 
 .slide-head h1{
@@ -258,3 +258,12 @@ border-radius: 5px;
         margin: 0 auto;
     }
 }
+
+/* scroll down **/
+.dscroll img{
+	position: relative;
+	margin-left: 80%;
+	height: 30px;
+	width: 30px;
+}
+/*scroll down ends*/

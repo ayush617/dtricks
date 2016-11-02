@@ -38,7 +38,7 @@ dc.showMovie=function(id){
     $ajaxUtils.sendGetRequest(
     "movie-snippet.html",
     function (responseText2,a){
-      var mov;    
+      var mov;
       for(mov in movlist){
         if(movlist[mov].id==id){
           responseText2 =insertProperty(responseText2,"id",movlist[mov].id);
@@ -51,7 +51,7 @@ dc.showMovie=function(id){
           responseText2 =insertProperty(responseText2,"BookMyShow",movlist[mov].BookMyShow);
           responseText2 =insertProperty(responseText2,"dur",movlist[mov].duration);
           responseText2 =insertProperty(responseText2,"link",movlist[mov].link);
-          
+
           history.pushState(null,null,loc);
         }
     }
@@ -72,7 +72,7 @@ else{
     $ajaxUtils.sendGetRequest(
     "movie-snippet.html",
     function (responseText2,a){
-      var mov;    
+      var mov;
       for(mov in movlist){
         if(movlist[mov].id==id){
           responseText2 =insertProperty(responseText2,"id",movlist[mov].id);
@@ -85,7 +85,7 @@ else{
           responseText2 =insertProperty(responseText2,"BookMyShow",movlist[mov].BookMyShow);
           responseText2 =insertProperty(responseText2,"dur",movlist[mov].duration);
           responseText2 =insertProperty(responseText2,"link",movlist[mov].link);
-          
+
           history.pushState(null,null,loc);
         }
     }
@@ -161,7 +161,7 @@ $(window).on('popstate',function(){
 var href=location.pathname;
 var id=dc.urlParam('id');
   if(!id){
-    movie(event);   
+    movie(event);
   }
   else{
     var id=dc.urlParam('id');
@@ -171,3 +171,13 @@ var id=dc.urlParam('id');
 })
 global.$dc = dc;
 })(window);
+
+function scroll(val)
+    {
+        
+                $('html, body').animate({
+                    scrollTop: $(val).offset().top
+                }, 1000);
+
+
+    }
