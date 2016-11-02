@@ -241,9 +241,6 @@ border: 2px solid transparent;
 				        /**slideshow end**/
 .movie-body{
     padding-bottom: 50px;
-<<<<<<< HEAD
-}
-=======
     background: red;
     background: -webkit-linear-gradient(red, yellow);
     background: -o-linear-gradient(red, yellow);
@@ -262,4 +259,3 @@ border: 2px solid transparent;
         margin: 0 auto;
     }
 }
->>>>>>> ba9c5bfa99bbeb0cc0a0756c5581b02ecbb65c8f
