@@ -4,6 +4,7 @@
 
 body, html {
     height: 95%;
+
 }
 body{
 	font-family:"New Times Roman";
@@ -68,7 +69,7 @@ footer p{
 	text-align: center;
 	font-family: cursive;
 	margin: 40px 0;
-	
+
 }
 
 
@@ -82,8 +83,8 @@ footer p{
 
 /******** index page ********/
 
-.box { margin-top: -90px;
-    padding: 15px 0 30px;
+.box { margin-top: -100px;
+    padding: 5px 0 20px;
     background-color:rgba(0,0,0,0.54);
     line-height: 1em;
     text-align: center;
