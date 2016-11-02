@@ -49,6 +49,7 @@ function showlist(event){
    }
       console.log(finalhtml);
       insertHtml("#main-content",finalhtml);
+      history.pushState(null,null,"/demo/web/movielist.html");
         },false);
     },
     false);

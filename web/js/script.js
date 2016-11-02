@@ -144,7 +144,8 @@ $ajaxUtils.sendGetRequest(
             }
           ]
 
-      });history.pushState(null,null,"/demo/web/movie.html");
+      });
+      history.pushState(null,null,"/demo/web/movie.html");
   },
   false);}
 else{
@@ -157,12 +158,13 @@ document.addEventListener("DOMContentLoaded", movie(event));
 $(window).on('popstate',function(){
 var href=location.pathname;
 var id=dc.urlParam('id');
-
+console.log(href);
   if(!id){
     movie(event);
   }
   else{
     dc.showMovie(parseInt(id));
+    history.pushState(null,null,"/demo/web/movie.html");
   }
 }
 )
