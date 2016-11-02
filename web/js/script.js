@@ -35,7 +35,7 @@ dc.showMovie=function(id){
     $ajaxUtils.sendGetRequest(
     "movie-snippet.html",
     function (responseText2,a){
-      var mov;    
+      var mov;
       for(mov in movlist){
         if(movlist[mov].id==id){
           responseText2 =insertProperty(responseText2,"id",movlist[mov].id);
@@ -48,7 +48,7 @@ dc.showMovie=function(id){
           responseText2 =insertProperty(responseText2,"BookMyShow",movlist[mov].BookMyShow);
           responseText2 =insertProperty(responseText2,"dur",movlist[mov].duration);
           responseText2 =insertProperty(responseText2,"link",movlist[mov].link);
-          
+
           history.pushState(null,null,loc);
         }
     }
@@ -69,7 +69,7 @@ else{
     $ajaxUtils.sendGetRequest(
     "movie-snippet.html",
     function (responseText2,a){
-      var mov;    
+      var mov;
       for(mov in movlist){
         if(movlist[mov].id==id){
           responseText2 =insertProperty(responseText2,"id",movlist[mov].id);
@@ -82,7 +82,7 @@ else{
           responseText2 =insertProperty(responseText2,"BookMyShow",movlist[mov].BookMyShow);
           responseText2 =insertProperty(responseText2,"dur",movlist[mov].duration);
           responseText2 =insertProperty(responseText2,"link",movlist[mov].link);
-          
+
           history.pushState(null,null,loc);
         }
     }
@@ -157,16 +157,24 @@ document.addEventListener("DOMContentLoaded", movie(event));
 $(window).on('popstate',function(){
 var href=location.pathname;
 var id=dc.urlParam('id');
-console.log(href);
-if(href=="/demo/web/movie.html"){
-  if(id==null){
-  movie(event);
-history.pushState(null,null,"/demo/web/movie.html");
-}
+
+  if(!id){
+    movie(event);
+  }
   else{
     dc.showMovie(parseInt(id));
   }
 }
-})
+)
 global.$dc = dc;
 })(window);
+
+function scroll(val)
+    {
+        
+                $('html, body').animate({
+                    scrollTop: $(val).offset().top
+                }, 1000);
+
+
+    }
