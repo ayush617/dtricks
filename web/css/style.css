@@ -86,7 +86,10 @@ footer p{
     background-color:rgba(0,0,0,0.54);
     line-height: 1em;
     text-align: center;
-<<<<<<< HEAD
+    background: -webkit-linear-gradient(#373636, #848484); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#373636, #848484); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#373636, #848484); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#373636, #848484);
 
 
 }
@@ -96,17 +99,11 @@ footer p{
 color: white;
 	font-size: 20px;
 	padding: 20px;
-}
-
-=======
-    background: -webkit-linear-gradient(#373636, #848484); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#373636, #848484); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#373636, #848484); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#373636, #848484);
+    
 }
 
 .box h1{
-	color:rgba(242, 248, 239, 0.61);
+	color:white;
 	padding: 20px;
 }
 
@@ -114,64 +111,45 @@ color: white;
     margin-top: 0px;
 	font-size: 42px;
 }
->>>>>>> ba9c5bfa99bbeb0cc0a0756c5581b02ecbb65c8f
 
-/*
-.button1 {
-    border: none;
-    padding: 5px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    margin: 10px 2px 30px;
-    cursor: pointer;
-    background-color: #555555;
-}
 
-.button1 p{
-	font-size: 16px;
-	font-weight: bold;
-	padding: 10px 0 10px;
-	color:#ffffff;
-}
-
-.button1:hover {
-background-color: white;
-}
-.button1:hover p{
-color: black;
-}
-.download{    margin-top: 50px;
-    color: grey;
-   text-align: center;
-   text-decoration: bold;
-   font-size: 30px;
-}
 
 
 			/******index end ********/
-			.button1 {
-			    background-color: #4CAF50; /* Green */
-			    border: none;
-			    color: white;
-			    padding: 16px 32px;
-			    text-align: center;
-			    text-decoration: none;
-			    display: inline-block;
-			    font-size: 16px;
-			    margin: 4px 2px;
-			    -webkit-transition-duration: 0.4s; /* Safari */
-			    transition-duration: 0.4s;
-			    cursor: pointer;
-					background-color: white;
-    color: #666666;
-    border: 2px solid #e7e7e7;
+button {
+background-color: #4CAF50; /* Green */
+border: none;
+color: white;
+padding: 16px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+-webkit-transition-duration: 0.4s; /* Safari */
+transition-duration: 0.4s;
+cursor: pointer;
+background-color: white;
+color: #666666;
+border: 2px solid #e7e7e7;
 }
 
-.button1:hover {background-color: #666666;
-                color:white;
-							border:none;
-						}
+button:hover 
+{
+background-color: #666666;
+color:white;
+border:none;
+padding: 16px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+-webkit-transition-duration: 0.4s; /* Safari */
+transition-duration: 0.4s;
+cursor: pointer;
+border: 2px solid transparent;
+}
 
 .parallax {
 	/**parralax start**/
