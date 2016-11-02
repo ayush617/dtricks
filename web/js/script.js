@@ -1,7 +1,4 @@
 (function(global){
-
-
-
   var dc={};
   var insertHtml = function (selector, html) {
   var targetElem = document.querySelector(selector);
@@ -147,7 +144,7 @@ $ajaxUtils.sendGetRequest(
             }
           ]
 
-      });
+      });history.pushState(null,null,"/demo/web/movie.html");
   },
   false);}
 else{
@@ -160,14 +157,16 @@ document.addEventListener("DOMContentLoaded", movie(event));
 $(window).on('popstate',function(){
 var href=location.pathname;
 var id=dc.urlParam('id');
-  if(!id){
-    movie(event);   
-  }
+console.log(href);
+if(href=="/demo/web/movie.html"){
+  if(id==null){
+  movie(event);
+history.pushState(null,null,"/demo/web/movie.html");
+}
   else{
-    var id=dc.urlParam('id');
-    history.pushState("null","null","/demo/web/movie.html");
-    $dc.showMovie(parseInt(id));
+    dc.showMovie(parseInt(id));
   }
+}
 })
 global.$dc = dc;
 })(window);
