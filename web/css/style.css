@@ -81,8 +81,8 @@ footer p{
 
 /******** index page ********/
 
-.box {
-    padding: 20px 0 50px;
+.box { margin-top: -90px;
+    padding: 15px 0 30px;
     background-color:rgba(0,0,0,0.54);
     line-height: 1em;
     text-align: center;
@@ -95,7 +95,7 @@ footer p{
 }
 
 .box p{
-/*	color:rgba(242, 248, 239, 0.61);*/
+
 color: white;
 	font-size: 20px;
 	padding: 20px;
@@ -104,7 +104,7 @@ color: white;
 
 .box h1{
 	color:white;
-	padding: 20px;
+	padding: 10px;
 }
 
 .box h1{
@@ -117,7 +117,7 @@ color: white;
 
 			/******index end ********/
 button {
-background-color: #4CAF50; /* Green */
+background-color: #4CAF50; 
 border: none;
 color: white;
 padding: 16px 32px;
